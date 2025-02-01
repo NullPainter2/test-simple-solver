@@ -13,11 +13,14 @@
     }
     
     
-    public static void AddListToList<T>(List<T> what, List<T> toWhat)
+    public static void AddListToListUniquely<T>(List<T> what, List<T> toWhat)
     {
         foreach (var item in what)
         {
-            toWhat.Add(item);
+            if (!toWhat.Contains(item))
+            {
+                toWhat.Add(item);
+            }
         }
     }
 

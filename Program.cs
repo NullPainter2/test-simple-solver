@@ -51,14 +51,6 @@
 
         allActions.Add(new MyAction
         {
-            description = "Drink the beer!",
-            preConditions = { State.HAVE_BEER },
-            postConditions = { State.BE_DRUNK },
-        });
-
-
-        allActions.Add(new MyAction
-        {
             description = "Take beer from fridge.",
             preConditions = { State.OPEN_FRIDGE },
             postConditions = { State.HAVE_BEER },
