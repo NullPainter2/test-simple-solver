@@ -63,7 +63,7 @@
 
                             // what actions were done
 
-                            newAttempt.actionsINeedToTake.Add(action);
+                            newAttempt.actionsTaken.Add(action);
 
                             possibleSolutions.Add(newAttempt);
                         }
