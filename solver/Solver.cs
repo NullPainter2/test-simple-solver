@@ -66,6 +66,14 @@
                             newAttempt.actionsINeedToTake.Add(action);
 
                             possibleSolutions.Add(newAttempt);
+                            
+                            // if (TryAddNewSolutions(action, solution, possibleSolutions, START_SITUATION))
+                            // {
+                            //     madeSomeProgress = true;
+                            //
+                            //     // Do not re-try this solution again
+                            //     solution.deleteMe = true;
+                            // }
                         }
                     }
                 }
@@ -90,5 +98,50 @@
                 ; // @debug
             }
         }
-    }    
+    }
+
+    // private static bool TryAddNewSolutions(MyAction action, Solution baseSolution, List<Solution> possibleSolutions,
+    //     List<State> START_SITUATION)
+    // {
+    //     // Make new solution by doing a doinga clone and updating the to-do list.
+    //     // I feel like multiple solutions could be created or to-do list could be updated in 
+    //
+    //     Solution newSolution = baseSolution.Duplicate();
+    //
+    //     // Already tried that action before ... @untested
+    //
+    //     if (baseSolution.actionsINeedToTake.Contains(action))
+    //     {
+    //         return false;
+    //     }
+    //
+    //     // Do re-try already handled States
+    //
+    //     var actionTodoList = new List<State>(action.preConditions);
+    //     ListUtils.RemoveListFromList(newSolution.doneList, actionTodoList);
+    //     if (actionTodoList.Count == 0)
+    //     {
+    //         return false;
+    //     }
+    //
+    //     ListUtils.AddListToListUniquely(actionTodoList, newSolution.todoList);
+    //
+    //     if (action.postConditions.Count == 0)
+    //     {
+    //         throw new Exception("Can't solve when post conditions are empty.");
+    //     }
+    //
+    //     ListUtils.RemoveListFromList(action.postConditions, newSolution.todoList);
+    //     ListUtils.AddListToListUniquely(action.postConditions, newSolution.doneList); // @todo 
+    //
+    //     ListUtils.RemoveListFromList(START_SITUATION, newSolution.todoList);
+    //
+    //     // history
+    //
+    //     newSolution.actionsINeedToTake.Add(action);
+    //
+    //     possibleSolutions.Add(newSolution);
+    //
+    //     return true;
+    // }
 }
