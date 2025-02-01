@@ -16,6 +16,8 @@
         Solver.Solve(allActions, new List<State> { State.BE_AT_HOME }, new List<State> { State.BE_DRUNK });
         
         Solver.Solve(allActions, new List<State> { State.BE_AT_SHOP }, new List<State> { State.BE_DRUNK });
+        
+        Solver.Solve(allActions, new List<State> { State.BE_DRUNK }, new List<State> { State.BE_DRUNK });
 
         PrintActions(allActions);
     }

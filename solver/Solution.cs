@@ -4,12 +4,23 @@
 
     public List<MyAction> actionsINeedToTake = new List<MyAction>();
 
-    // all must be done
+    public List<State> doneList = new List<State>();
+
     public List<State> todoList = new List<State>();
 
     public void ReportSolution()
     {
         Console.WriteLine("Solution:");
+        Console.WriteLine("---------");
+
+        if (actionsINeedToTake.Count == 0)
+        {
+            Console.WriteLine("Solved by doing nothing :)");
+            Console.WriteLine();
+
+            return;
+        }
+        
         for (int i = 0; i < actionsINeedToTake.Count; i++)
         {
             int index = actionsINeedToTake.Count - 1 - i;
