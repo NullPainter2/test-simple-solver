@@ -1,6 +1,8 @@
 Very simple C# solver.
 
 # Define states
+_Enum called `State` is expected in rest of code to exist._ 
+
 ```C#
 ﻿public enum State
 {
