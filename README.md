@@ -53,4 +53,4 @@ For start & goal actions.
 ```
 
 # Print result
-![image](https://github.com/user-attachments/assets/1741d6bc-7b29-446c-a604-0fcb8ac263e3)
+![image](https://github.com/user-attachments/assets/1eb12c1d-9fb7-45df-8213-8d82f086bbaa)
