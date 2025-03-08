@@ -1,6 +1,12 @@
-Very simple C# solver.
+Very simple C# solver based on the idea of todo-list; blindly coded after hearing about GOAP. Given goal it adds the actions which fullfil that goal's requirements. Ends if no change can be made.
 
-# Define states
+# Running
+
+Just `dotnet run` or `dotnet watch`.
+
+# Usage
+
+## Define states
 _Enum called `State` is expected in rest of code to exist._ 
 
 ```C#
@@ -16,7 +22,7 @@ _Enum called `State` is expected in rest of code to exist._
 }
 ```
 
-# Add actions (State -> State)
+## Add actions (State -> State)
 ```C#
        List<MyAction> allActions = new List<MyAction>();
 
@@ -36,7 +42,7 @@ _Enum called `State` is expected in rest of code to exist._
         ...
 ```
 
-# Solve
+## Run solver
 
 For start & goal actions.
 
